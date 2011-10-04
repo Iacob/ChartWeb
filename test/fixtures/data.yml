@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: 
+  stat_id: 
+  date: 2011-10-04 08:49:38
+  value: 
+
+two:
+  id: 
+  stat_id: 
+  date: 2011-10-04 08:49:38
+  value: 

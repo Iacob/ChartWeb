@@ -1,0 +1,27 @@
+<h1>Listing data</h1>
+
+<table>
+  <tr>
+    <th><div class="table-text">Stat</div></th>
+    <th><div class="table-text">Date</div></th>
+    <th><div class="table-text">Value</div></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @data.each do |datum| %>
+  <tr>
+    <td><div class="table-text"><%= datum.stat_id %></div></td>
+    <td><div class="table-text"><%= datum.date %></div></td>
+    <td><div class="table-text"><%= datum.value %></div></td>
+    <td><%= link_to 'Show', datum %></td>
+    <td><%= link_to 'Edit', edit_datum_path(datum) %></td>
+    <td><%= link_to 'Destroy', datum, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Datum', new_datum_path %>
