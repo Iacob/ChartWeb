@@ -1,4 +1,6 @@
 ChartWeb::Application.routes.draw do
+  resources :stats
+
   resources :data
 
   # The priority is based upon order of creation:
